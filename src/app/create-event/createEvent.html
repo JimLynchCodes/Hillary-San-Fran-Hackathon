@@ -1,3 +1,40 @@
-<div>
-  Create Event Page
+<div class="center-everything">
+  <h2>Create New Event</h2>
+  <form ng-submit="vm.submit()">
+    Event Title:
+    <input type="text" ng-model="vm.title" name="text" />
+    <br>
+
+    Time:
+    <input type="time" ng-model="vm.time" name="text" />
+    <br>
+
+    Date:
+    <input type="date" ng-model="vm.date" name="text" />
+    <br>
+
+    Location:
+    <input type="text" ng-model="vm.location" name="text" />
+    <br>
+
+    Cost:
+    <input type="text" ng-model="vm.cost" name="text" />
+    <br>
+
+    Description:
+    <input type="text" ng-model="vm.description" name="text" />
+    <br>
+
+    Admin Verification Code:
+    <input type="text" ng-model="vm.adminCode" name="text" />
+    <br>
+
+    <div ng-show="vm.submitRejected" class="admin-rejection">
+      Sorry, that is not the correct admin code.
+    </div>
+
+    <input type="submit" id="submit" value="Submit"/>
+    <button ui-sref="home"> Cancel </button>
+  </form>
+
 </div>

@@ -2,24 +2,30 @@
 
 
   <div>
-    <!--<h1>Hillary hackathon</h1>-->
     <h2>
       Events in San Francisco, CA
+      <button ui-sref="createEvent"> Create Event </button>
     </h2>
 
     <div class="login-button-container">
+
       <span ng-show="!vm.signedIn">
-        You are not signed in.
+        Please sign in:
+        <input type="text" ng-model="vm.tempUsername">
+        <button class="login-button" ng-click="vm.onLoginClick()"> Login </button>
       </span>
+
+
       <span ng-show="vm.signedIn">
-        Welcome, {{username}}
+        Welcome, {{vm.username}}.
+        <button class="login-button" ng-click="vm.onLogoutClick()"> Logout </button>
       </span>
-      <button class="login-button" ui-sref='login'> Login </button>
+
+
     </div>
 
 
   </div>
-
 
 
   <div class="eventList" ng-repeat="event in vm.eventsList">
