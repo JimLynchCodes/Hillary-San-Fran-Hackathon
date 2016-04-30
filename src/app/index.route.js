@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('hillaryHackathon')
+    .module('fourNew')
     .config(routerConfig);
 
   /** @ngInject */
@@ -12,7 +12,19 @@
         url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
-        controllerAs: 'main'
+        controllerAs: 'vm'
+      })
+      .state('login', {
+        url: '/login',
+        templateUrl: 'app/login/login.html',
+        controller: 'LoginController',
+        controllerAs: 'vm'
+      })
+      .state('createEvent', {
+        url: '/create-event',
+        templateUrl: 'app/create-event/createEvent.html',
+        controller: 'CreateEventController',
+        controllerAs: 'vm'
       });
 
     $urlRouterProvider.otherwise('/');

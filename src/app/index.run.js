@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('hillaryHackathon')
+    .module('fourNew')
     .run(runBlock);
 
   /** @ngInject */

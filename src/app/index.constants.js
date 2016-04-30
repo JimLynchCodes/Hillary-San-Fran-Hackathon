@@ -3,8 +3,8 @@
   'use strict';
 
   angular
-    .module('hillaryHackathon')
-    .constant('malarkey', malarkey)
-    .constant('moment', moment);
+    .module('fourNew')
+    .constant('FIREBASE_URL', 'https://hillary-hackathon.firebaseio.com/locations/CA');
+
 
 })();

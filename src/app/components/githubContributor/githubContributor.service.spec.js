@@ -6,7 +6,7 @@
     var $httpBackend;
     var $log;
 
-    beforeEach(module('hillaryHackathon'));
+    beforeEach(module('fourNew'));
     beforeEach(inject(function(_githubContributor_, _$httpBackend_, _$log_) {
       githubContributor = _githubContributor_;
       $httpBackend = _$httpBackend_;

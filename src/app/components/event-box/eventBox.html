@@ -1,0 +1,31 @@
+<div ng-class="{'button-container-is-joined':vm.isJoined,
+                'button-container-not-joined':!vm.isJoined}">
+
+  <!--{{vm.eventObj}}-->
+  <h1>Title: {{vm.eventObj.$id}}</h1>
+  <h3>When: {{vm.eventObj.time}} {{vm.eventObj.date}}</h3>
+  <h3>Where: {{vm.eventObj.location}}</h3>
+  <h3>Who: {{vm.eventObj.totalAttendees}} supporters are attending this event.</h3>
+  <h3>What: {{vm.eventObj.description}}</h3>
+
+  <!--<div>Descriptiong</div>-->
+  <!--<div> 133 people-->
+
+  <div >
+
+    <!--'!vm.isJoined':'button-container-not-joined'-->
+      <button ng-show="!vm.isJoined"
+            class="join-button"
+            ng-click="vm.onJoinClick()">
+            Join</button>
+
+      <div ng-show="vm.isJoined"> You have joined this event!
+      <button class="join-button"
+              ng-click="vm.onCancelClick()">
+              Cancel</button>
+    </div>
+  </div>
+
+
+</div>
+</div>

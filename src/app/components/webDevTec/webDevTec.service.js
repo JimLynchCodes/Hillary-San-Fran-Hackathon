@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-      .module('hillaryHackathon')
+      .module('fourNew')
       .service('webDevTec', webDevTec);
 
   /** @ngInject */

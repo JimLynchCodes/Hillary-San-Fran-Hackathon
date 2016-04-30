@@ -1,0 +1,30 @@
+
+.join-button {
+  width: 200px;
+  height: 50px;
+  //right: 0;
+}
+
+@mixin button-container {
+  //min-height:500px;
+}
+
+.button-container-is-joined {
+  @include button-container;
+
+  background-color: lightgreen;
+}
+
+.button-container-not-joined {
+  @include button-container;
+
+  background-color: lightblue;
+}
+
+
+.join-button-container {
+  clear:both;
+  text-align:right;
+  margin-right: 30px;
+
+}
