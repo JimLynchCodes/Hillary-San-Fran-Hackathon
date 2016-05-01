@@ -1,4 +1,19 @@
 .center-everything {
   margin:auto;
+
+  max-width: 400px;
+  //align-content: right;
   text-align: center;
+  //center-everything
+  padding-bottom: 15px;
+  padding-top: 1px;
+}
+
+.bigger-container {
+  margin:auto;
+  text-align:center;
+  align-content:center;
+  background-color: lightblue;
+  max-width: 70%;
+  border-radius: 10px;
 }

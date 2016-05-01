@@ -1,11 +1,11 @@
 <div class="container">
 
-
-  <div>
+  <div class="user-controls">
     <h2>
       Events in San Francisco, CA
-      <button ui-sref="createEvent"> Create Event </button>
     </h2>
+
+    <button ui-sref="createEvent"> Create Event </button>
 
     <div class="login-button-container">
 
@@ -15,12 +15,10 @@
         <button class="login-button" ng-click="vm.onLoginClick()"> Login </button>
       </span>
 
-
       <span ng-show="vm.signedIn">
         Welcome, {{vm.username}}.
         <button class="login-button" ng-click="vm.onLogoutClick()"> Logout </button>
       </span>
-
 
     </div>
 

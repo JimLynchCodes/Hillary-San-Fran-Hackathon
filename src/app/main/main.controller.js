@@ -25,7 +25,7 @@
       }
 
     });
-
+    
 
     vm.onLoginClick = function() {
 

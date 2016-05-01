@@ -1,32 +1,41 @@
+<div>
+<div class="bigger-container">
 <div class="center-everything">
   <h2>Create New Event</h2>
   <form ng-submit="vm.submit()">
     Event Title:
     <input type="text" ng-model="vm.title" name="text" />
     <br>
+    <br>
 
     Time:
     <input type="time" ng-model="vm.time" name="text" />
+    <br>
     <br>
 
     Date:
     <input type="date" ng-model="vm.date" name="text" />
     <br>
+    <br>
 
     Location:
     <input type="text" ng-model="vm.location" name="text" />
+    <br>
     <br>
 
     Cost:
     <input type="text" ng-model="vm.cost" name="text" />
     <br>
+    <br>
 
     Description:
     <input type="text" ng-model="vm.description" name="text" />
     <br>
+    <br>
 
     Admin Verification Code:
     <input type="text" ng-model="vm.adminCode" name="text" />
+    <br>
     <br>
 
     <div ng-show="vm.submitRejected" class="admin-rejection">
@@ -37,4 +46,6 @@
     <button ui-sref="home"> Cancel </button>
   </form>
 
+</div>
+</div>
 </div>

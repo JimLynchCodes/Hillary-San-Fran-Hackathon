@@ -19,6 +19,26 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
   padding: 0.2em 0;
 }
 
+$body-bg: transparent;
+
+.body {
+  background-color: rgba(0,0,0,0) !important;
+  //background-image: url('../assets/images/ws_Red_White_and_Blue_Abstract_2560x1440.jpg');
+}
+
+:root {
+  background-image: url('../assets/images/ws_Red_White_and_Blue_Abstract_2560x1440.jpg');
+  background-position: 50% 0%;
+  background-size: cover;
+  background-attachment: fixed;
+  repeat: no-repeat;
+
+}
+
+.transparent-bg {
+  background-color: transparent;
+}
+
 .thumbnail {
   height: 200px;
 
